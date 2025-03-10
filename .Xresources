@@ -1,0 +1,23 @@
+#include "/home/oldman/apps/Xresources-themes/xcolors-chalk.Xresources"
+
+Xcursor.size: 12
+
+URxvt.font: xft:monospace:size=12,xft:NotoColorEmoji:size=12,xft:NotoSansMonoNerdFont:size=12
+URxvt.depth:32
+URxvt.background: [60]#000000
+URxvt.foreground: #ffffff
+
+
+URxvt.scrollBar: False
+URxvt.cursorBlink: True
+
+URxvt.perl-ext-common: default,font-size
+! Font-size
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+
+

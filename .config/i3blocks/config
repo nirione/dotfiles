@@ -1,0 +1,64 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+#[test]
+#full_text=" "
+#align=center
+
+#[documentation]
+#full_text=Documentation
+#website=https://vivien.github.io/i3blocks
+#command=xdg-open "$website"
+#color=#f12711
+
+#[greetings]
+#color=#f5af19
+#command=echo "Hello, $USER!"
+#interval=once
+
+#[clickme]
+#align=center
+#full_text=Click me!
+#command=while read button; do echo "Got click $button"; done
+#command=bash ~/.config/i3blocks/.shscripts/test.sh
+#interval=persist
+
+[audio]
+align=right
+full_text=Audio
+command=bash ~/.config/i3blocks/.shscripts/audio.sh
+interval=15
+signal=1
+
+#[pacman]
+#align=center
+#full_text=Pacman
+#command=bash ~/.config/i3blocks/.shscripts/pacman.sh
+#interval=once
+#signal=8
+
+
+[battery]
+align=left
+full_text=Bat info
+command=bash ~/.config/i3blocks/.shscripts/battery.sh
+interval=15
+#signal=2
+
+[time]
+full_text=date and time
+command=date '+   %a, %d/%m/%y   %H:%M '
+#command=bash ~/.config/i3blocks/.shscripts/cal.sh
+interval=30
+
+
+
